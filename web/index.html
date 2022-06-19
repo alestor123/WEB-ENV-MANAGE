@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./public/styles/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="./public/scripts/fontawesome.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles/App.css" >
+    <link rel="icon" href="assets/icon.svg">
+    <title>WEB ENV MANAGE</title>
+</head>
+<body>
+    <h1>Web Env <i class="fas fa-cogs"></i> </h1>
+    <div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            The .env file is for storing secrets for your app, like an API key. Any project member can see the contents in the same way that you can, and everyone else can just see the variable names.
+          </div>
+</div>
+<label style="font-size:24px;" id="fileName" for="file-upload" class="btn btn-success" title="Open File(Alt+O)">
+    <i  class="fa-solid fa-file-code"></i> Open File
+</label>
+<input id="file-upload" accept=".env" accesskey="o" type="file"/>
+
+<div id="varAdd">
+<input type="text" placeholder="Search" accesskey="s" title="Search (Alt+S)" id="search" disabled>  
+</div>
+
+<div id="varAdd">
+<input type="text" title="Add keyword" placeholder="Key" id="addVarin" accesskey="k"  title="Keyword(Alt+K)" disabled>  
+<input type="text" title="Add value" placeholder="Value" id="addVarinn" accesskey="v" title="Value(Alt+V)" disabled>
+<button type="button" class="btn btn-danger" id="deleteButton" accesskey="d" title="Delete File(Alt+D)" disabled> <i class="fas fa-minus-circle"></i>  Delete</button>
+</div>
+<div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+              <th scope="col">Fields</th>
+              <th scope="col">Number</th>
+              <th scope="col">Key</th>
+              <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody id="tableCon">
+          </tbody>
+      </table>  
+<button type="button" accesskey="a" title="Add Variable(Alt+A)" id="addButton" class="btn btn-success" disabled> <i class="fas fa-save"></i> Add variable </button>
+<button type="button" accesskey="u" title="Update Variable(Alt+U)" id="updateButton" class="btn btn-success" disabled> <i class="fas fa-save"></i>  Update</button>
+</div>
+</body>
+</html>

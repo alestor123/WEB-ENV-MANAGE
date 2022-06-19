@@ -1,0 +1,11 @@
+
+        Usage: web-env-manage -f <input env file>
+  
+
+Arguments : 
+
+-v, --version            get current version
+-h, --help               give this help list
+-i, --issue              give the url to issue page
+-d, --documentation      give the url to documentation page
+-f, --file               set the path to env file

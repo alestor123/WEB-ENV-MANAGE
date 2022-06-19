@@ -1,0 +1,70 @@
+{
+	"name": "web-env-manage",
+	"displayName": "Web Env Manage",
+	"version": "1.0.0",
+	"description": "This is a simple code for desktop version for WEB-ENV-MANAGE",
+	"main": "App.js",
+	"funding": "https://alestor123.is-a.dev/donate",
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"devDependencies": {
+		"electron-builder": "^23.0.3"
+	},
+	"build": {
+		"appId": "com.example.webenvmanage",
+		"mac": {
+			"category": "public.app-category.tools",
+			"darkModeSupport": true
+		},
+		"dmg": {
+			"iconSize": 160,
+			"contents": [
+				{
+					"x": 180,
+					"y": 170
+				},
+				{
+					"x": 480,
+					"y": 170,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"linux": {
+			"icon": "assets/icons/icon.svg",
+			"target": [
+				"AppImage",
+				"deb"
+			],
+			"category": "developer;tools"
+		}
+	},
+	"scripts": {
+		"start": "electron . --no-sandbox",
+		"test": "standard && node test.js | tap-spec",
+		"example": "node run.js",
+		"lint": "standard . --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alestor123/WEB-ENV-MANAGE.git"
+	},
+	"author": {
+		"name": "Alestor Aldous",
+		"email": "alestoraldous@gmail.com",
+		"url": "https://alestor123.is-a.dev/"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/alestor123/WEB-ENV-MANAGE/issues"
+	},
+	"homepage": "https://github.com/alestor123/WEB-ENV-MANAGE#readme",
+	"dependencies": {
+		"chalk": "^4.1.0",
+		"dotenv": "^16.0.1",
+		"minimist": "^1.2.6"
+	}
+}

@@ -1,0 +1,29 @@
+body { 
+    font-family: monospace;
+    align-items: center;
+    color: white;
+    background-color: #282c34;
+    justify-content: center;
+    text-align: center;
+}
+table{
+  background-color: white;
+}
+input {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
