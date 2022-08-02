@@ -4,6 +4,7 @@
 	"version": "1.0.0",
 	"description": "This is a simple code for desktop version for WEB-ENV-MANAGE",
 	"main": "App.js",
+	"icon":"https://raw.githubusercontent.com/alestor123/WEB-ENV-MANAGE/master/assets/icons/icon.svg",
 	"funding": "https://alestor123.is-a.dev/donate",
 	"bin": "cli.js",
 	"engines": {
